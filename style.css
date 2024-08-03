@@ -1,11 +1,21 @@
 :root {
+  --primary: cadetblue;
   --headings: black;
   --text: #333333;
+  --text--inverse: white;
   --shadow: rgb(0 0 0 / 0.5);
 }
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -43,6 +53,7 @@ section h2 {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .about-section::before {
@@ -50,7 +61,7 @@ section h2 {
   position: absolute;
   inset: 0;
   width: 200%;
-  background-color: cadetblue;
+  background-color: var(--primary);
   transform-origin: bottom left;
   transform: rotate(-12deg);
   z-index: -1;
@@ -93,17 +104,17 @@ section h2 {
 }
 
 .work-section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .work-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 4rem;
 }
 
 .work-container article {
-  flex-grow: 1;
+  max-width: fit-content;
   box-shadow: 0px 8px 16px var(--shadow);
   background-color: white;
 }
@@ -124,6 +135,35 @@ section h2 {
   width: 1.5rem;
   height: auto;
   flex-shrink: 0;
+}
+
+.contact-section {
+  display: flex;
+  gap: 3rem;
+  background-color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.contact-container :is(h2, p, a) {
+  color: var(--text--inverse);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: min-content;
+}
+
+.contact-container address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-style: normal;
+}
+
+.contact-section img {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
