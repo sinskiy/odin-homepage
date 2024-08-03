@@ -9,56 +9,61 @@
   </head>
   <body>
     <main>
-      <section aria-labelledby="about">
-        <figure>
+      <section aria-labelledby="about" class="about-section">
+        <figure class="picture-with-caption">
           <img
             srcset="
-              ashley-williams-480w.webp 480w,
-              ashley-williams-720w.webp 720w
+              images/dima-sinskiy-480w.webp 480w,
+              images/dima-sinskiy-720w.webp 720w
             "
             sizes="(min-width: 1000px) 720px, 480px"
-            src="ashley-williams-720w.webp"
+            src="images/dima-sinskiy-720w.webp"
             alt="me"
           />
-          <figcaption>Ashley Williams</figcaption>
+          <figcaption>Dima Sinskiy</figcaption>
         </figure>
-        <div>
-          <h2 id="about">about me</h2>
+        <div class="about-container">
+          <h2 id="about">About me</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-            facilis dolor sequi doloribus soluta, eos sunt id deleniti adipisci,
-            consequatur nobis fugit, necessitatibus animi reiciendis. Vitae
-            distinctio in id eius expedita nostrum et, impedit odio cum
-            doloremque vel quisquam voluptatibus consequuntur a nisi minus
-            aliquam unde molestias iste ut nobis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            adipisci eos, molestias deserunt eveniet non ratione tenetur,
+            dignissimos modi, aliquid voluptate quis a laboriosam nemo beatae
+            officia rerum? Aliquid ipsam maiores dignissimos modi laborum quam
+            eligendi rerum nulla ea, quae iure dolore excepturi mollitia
+            molestias officiis magnam illo ratione, error laudantium natus.
+            Minima tenetur magnam, ullam at quidem neque assumenda sapiente cum
+            pariatur.
           </p>
+          <ul class="social social-small">
+            <li>
+              <a
+                href="https://github.com/sinskiy"
+                aria-label="my github account"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <button aria-label="information about my linkedin account">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+                />
+              </button>
+            </li>
+            <li>
+              <button aria-label="information about my twitter/x account">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="https://github.com/sinskiy" aria-label="my github account">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-              />
-            </a>
-          </li>
-          <li>
-            <button aria-label="information about my linkedin account">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-              />
-            </button>
-          </li>
-          <li>
-            <button aria-label="information about my twitter/x account">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
-              />
-            </button>
-          </li>
-        </ul>
       </section>
       <section aria-labelledby="work">
-        <h2 id="work">my work</h2>
+        <h2 id="work">My work</h2>
         <article>
           <img src="" alt="" />
           <div>
@@ -232,7 +237,15 @@
             </li>
           </ul>
         </div>
-        <img src="" alt="" />
+        <img
+          srcset="
+            images/dima-sinskiy-2-480w.webp 480w,
+            images/dima-sinskiy-2-720w.webp 720w
+          "
+          sizes="(min-width: 1000px) 720px, 480px"
+          src="images/dima-sinskiy-2-720w.webp"
+          alt="Dima Sinskiy"
+        />
       </section>
     </main>
   </body>
