@@ -6,13 +6,16 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+ul,
+figure {
+  padding: none;
+}
 img {
   display: block;
   max-width: 100%;
 }
 ul {
   list-style: none;
-  padding: 0;
 }
 input,
 button {
