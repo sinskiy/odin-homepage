@@ -20,10 +20,11 @@ a:hover {
 
 p {
   line-height: 1.7;
+  letter-spacing: 0.4px;
 }
 
 section {
-  padding: 4rem 6rem;
+  padding: 4rem 16rem;
 }
 
 section h2 {
@@ -35,7 +36,16 @@ section h2 {
 
 .social {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.social li {
+  flex-shrink: 0;
+}
+
+.social img {
+  width: 3rem;
+  height: auto;
 }
 
 .social button {
@@ -43,10 +53,13 @@ section h2 {
   border: none;
 }
 
+.social-small {
+  gap: 1rem;
+}
+
 .social-small img {
   width: 2rem;
   height: auto;
-  flex-shrink: 0;
 }
 
 .about-section {
@@ -131,6 +144,11 @@ section h2 {
   font-size: 1.25rem;
 }
 
+.project-header ul {
+  display: flex;
+  gap: 1rem;
+}
+
 .project-header img {
   width: 1.5rem;
   height: auto;
@@ -139,7 +157,7 @@ section h2 {
 
 .contact-section {
   display: flex;
-  gap: 3rem;
+  gap: 6rem;
   background-color: var(--primary);
   font-size: 1.25rem;
 }
@@ -162,7 +180,18 @@ section h2 {
   font-style: normal;
 }
 
-.contact-section img {
+.contact-container address a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-container address img {
+  width: 2rem;
+  height: auto;
+}
+
+.contact-container + img {
   flex-grow: 1;
 }
 
