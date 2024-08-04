@@ -19,53 +19,57 @@
   <body>
     <main>
       <section aria-labelledby="about" class="about-section">
-        <figure class="picture-with-caption">
-          <img
-            srcset="
-              images/dima-sinskiy-480w.webp 480w,
-              images/dima-sinskiy-720w.webp 720w
-            "
-            sizes="(min-width: 1000px) 720px, 480px"
-            src="images/dima-sinskiy-720w.webp"
-            alt="me"
-          />
-          <figcaption>Dima Sinskiy</figcaption>
-        </figure>
-        <div class="about-container">
-          <h2 id="about">About me</h2>
-          <p>
-            A 15 years old from russia, who really likes reading dystopias and
-            self-improvement books. It's hard for me to talk to strangers and
-            I'm a bit awkward. Currently my two main goals are to be ready to
-            work as a full stack/frontend developer and to improve my English
-            speaking skills
-          </p>
-          <ul class="social social-small">
-            <li>
-              <a
-                href="https://github.com/sinskiy"
-                aria-label="my github account"
-              >
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/" aria-label="linkedin homepage">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/" aria-label="x homepage">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
-                />
-              </a>
-            </li>
-          </ul>
+        <div class="about-wrapper">
+          <figure class="picture-with-caption">
+            <picture>
+              <source
+                media="(max-width: 999px)"
+                srcset="images/dima-sinskiy-480w.jpg"
+              />
+              <source
+                media="(min-width: 1000px)"
+                srcset="images/dima-sinskiy-720w.jpg"
+              />
+              <img src="images/dima-sinskiy-720w.jpg" alt="Dima Sinskiy" />
+            </picture>
+            <figcaption>Dima Sinskiy</figcaption>
+          </figure>
+          <div class="about-container">
+            <h2 id="about">About me</h2>
+            <p>
+              A 15 years old from russia, who really likes reading dystopias and
+              self-improvement books. It's hard for me to talk to strangers and
+              I'm a bit awkward. Currently my two main goals are to be ready to
+              work as a full stack/frontend developer and to improve my English
+              speaking skills
+            </p>
+            <ul class="social social-small">
+              <li>
+                <a
+                  href="https://github.com/sinskiy"
+                  aria-label="my github account"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/" aria-label="linkedin homepage">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/" aria-label="x homepage">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section aria-labelledby="work" class="work-section">
@@ -334,15 +338,17 @@
             </li>
           </ul>
         </div>
-        <img
-          srcset="
-            images/dima-sinskiy-2-480w.webp 480w,
-            images/dima-sinskiy-2-720w.webp 720w
-          "
-          sizes="(min-width: 1000px) 720px, 480px"
-          src="images/dima-sinskiy-2-720w.webp"
-          alt="Dima Sinskiy"
-        />
+        <picture>
+          <source
+            media="(min-width: 1000px)"
+            srcset="images/dima-sinskiy-2-720w.jpg 720w"
+          />
+          <source
+            media="(max-width: 999px)"
+            srcset="images/dima-sinskiy-2-360w.jpg 360w"
+          />
+          <img src="images/dima-sinskiy-2-720w.jpg" alt="Dima Sinskiy" />
+        </picture>
       </section>
     </main>
   </body>
