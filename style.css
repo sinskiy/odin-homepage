@@ -195,7 +195,18 @@ section h2 {
 }
 
 .contact-container + img {
-  flex-grow: 1;
+  flex: 1;
+  max-width: 100%;
+}
+
+@media (max-width: 1250px) {
+  section {
+    padding: 4rem;
+  }
+  .work-container {
+    gap: 2rem;
+    margin-bottom: 10rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
